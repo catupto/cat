@@ -21,18 +21,6 @@
     "api": "./lib/drpy2.min.js",
     "ext": "./js/南瓜影视.js"},
     
-   /*{"key": "drpy_js_cz",
-    "name": "厂长|优质",
-    "type": 3,
-    "api": "https://ghporxy.net/https://raw.githubusercontent.com/catupto/cat/main/js/lib/drpy2.min.js",
-    "ext": "https://ghproxy.net/https://raw.githubusercontent.com/yhxxm/dr_py/main/js/厂长资源.js"},
-        
-   {"key": "drpy_js_bt",
-    "name": "两BT|DRPY",
-    "type": 3,
-    "api": "https://ghporxy.net/https://raw.githubusercontent.com/catupto/cat/main/js/lib/drpy2.min.js",
-    "ext": "https://ghproxy.net/https://raw.githubusercontent.com/yhxxm/dr_py/main/js/两个BT.js"},*/
-   
     {"key": "csp_sp_lbt",
     "name": "倆BT|Biu",
     "type": 3,
@@ -56,8 +44,8 @@
    {"key": "drpy_js_sj",
     "name": "视觉|DRPY",
     "type": 3,
-    "api": "https://ghporxy.net/https://raw.githubusercontent.com/catupto/cat/main/js/lib/drpy2.min.js",
-    "ext": "https://ghproxy.net/https://raw.githubusercontent.com/catupto/cat/main/js/新视觉.js"},
+    "api": "./lib/drpy2.min.js",
+    "ext": "./js/新视觉.js"},
   
     {"key": "csp_xb_free",
     "name": "Free|Biu",
