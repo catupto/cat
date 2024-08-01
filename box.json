@@ -31,13 +31,13 @@
     "name": "厂长|优质",
     "type": 3,
     "api": "./lib/drpy2.min.js",
-    "ext": "https://ghproxy.net/https://raw.githubusercontent.com/yhxxm/dr_py/main/js/厂长资源.js"},
+    "ext": "https://gh.loven.eu.org/https://raw.githubusercontent.com/yhxxm/dr_py/main/js/厂长资源.js"},
         
     {"key": "drpy_js_bt",
     "name": "两BT|DRPY",
     "type": 3,
     "api": "./lib/drpy2.min.js",
-    "ext": "https://ghproxy.net/https://raw.githubusercontent.com/yhxxm/dr_py/main/js/两个BT.js"},
+    "ext": "https://gh.loven.eu.org/https://raw.githubusercontent.com/yhxxm/dr_py/main/js/两个BT.js"},
    
     {"key": "csp_sp_lbt",
     "name": "倆BT|Biu",
@@ -46,7 +46,7 @@
     "searchable": 1,
     "quickSearch": 1,
     "filterable": 0,
-    "ext":{"homeUrl": "https://www.bttwo.net/{cateId}/page/{catePg}",
+    "ext":{"homeUrl": "https://www.bttwo.org/{cateId}/page/{catePg}",
     "cateManual": {"国产剧": "zgjun","日韩剧": "jpsrtv","美剧": "meiju","动作片": "movie_bt_tags/at","喜剧片":"movie_bt_tags/xiju","悬疑片":"movie_bt/movie_bt_tags/xuanni","犯罪片":"movie_bt/movie_bt_tags/fanzui","战争片":"movie_bt_tags/zhanzheng","动画片":"movie_bt_tags/donghua"}}},
     
     {"key": "csp_xb_czzy",
