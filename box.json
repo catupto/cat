@@ -474,7 +474,7 @@
     {"name": "在线",
     "type":"0",
     "pass": true,
-    "url":"https://ghproxy.net/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt",
+    "url":"https://ghproxy.net/https://raw.githubusercontent.com/catupto/autotv/main/lives.txt",
     "epg": "https://epg.mxdyeah.top/api/diyp/?ch={name}&date={date}",     
     "logo": "https://live.mxdyeah.top/logo/{name}.png"}
     ],
