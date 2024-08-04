@@ -4,7 +4,7 @@ var rule={
     // host:'https://shdy3.com',
     //https://shdy2.com
      //host:'http://shapp.us/',
-    host:'https://saohuo.tv/',
+    host:'https://saohuo.tv',
     //hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,"a:eq(2)&&href");print(src);HOST=src',
     // url:'/list/fyclass-fypage.html',
     url:'/list/fyfilter-fypage.html',
