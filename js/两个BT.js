@@ -19,8 +19,8 @@ var rule = {
         'User-Agent':'PC_UA'
     },
     timeout:5000,
-    class_name:'电视剧&电影&国产剧&美剧&日韩剧',//静态分类名称拼接
-    class_url:'dsj&new-movie&zgjun&meiju&jpsrtv',//静态分类标识拼接
+    class_name:'国产剧&美剧&日韩剧',//静态分类名称拼接
+    class_url:'zgjun&meiju&jpsrtv',//静态分类标识拼接
     // class_parse: '.navlist li:gt(0):lt(7);a&&Text;a&&href;.*/(\\w+)',
     play_parse:true,
     lazy:'',
