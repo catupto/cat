@@ -53,6 +53,15 @@
     "filterable": 1,
     "api": "./lib/drpy2.min.js",
     "ext": "./js/两个BT.js"},
+        
+    {"key": "drpy_js_mqsp",
+    "name": "麻雀|DRPY",
+    "type": 3,
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "api": "./lib/drpy2.min.js",
+    "ext": "./js/麻雀视频.js"},
    
     {"key": "drpy_js-shys",
     "name": "稍火|DRPY",
