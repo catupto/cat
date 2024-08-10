@@ -7,7 +7,7 @@
     "quickSearch": 1,
     "filterable": 1,
     "api": "./lib/drpy2.min.js",
-    "ext": "./js/360.js"},
+    "ext": "./js/360影视.js"},
  
     {"key": "drpy_js_db",
     "name": "豆瓣|榜单",
