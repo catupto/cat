@@ -530,6 +530,15 @@
     "filterable": 1,
     "api": "./lib/drpy2.min.js",
     "ext": "./js/暴风资源.js"},
+            
+    {"key": "drpy_js_ok",
+    "name": "OK|DRPY",
+    "type": 3,
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "api": "./lib/drpy2.min.js",
+    "ext": "./js/ok资源.js"}, 
         
     {"key": "csp_xml_bf",
     "name": "暴风|采集",
