@@ -540,15 +540,6 @@
     "api": "./lib/drpy2.min.js",
     "ext": "./js/ok资源.js"}, 
         
-    {"key": "csp_xml_bf",
-    "name": "暴风|采集",
-    "type": 1,
-    "api": "https://bfzyapi.com/api.php/provide/vod/",
-    "searchable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "categories": ["国产剧","大陆综艺","韩国剧","大陆动漫","动作","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","香港剧","动漫片","欧美剧"]},
-    
     {"key": "csp_xml_xl",
     "name": "新浪|采集",
     "type": 1,
@@ -556,17 +547,7 @@
     "searchable": 1,
     "quickSearch": 1,
     "filterable": 0,
-    "categories": ["大陆剧","综艺","韩剧","动漫","动作","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","港澳剧","动漫电影","欧美剧"]},
-    
-    {"key": "csp_xml_ff",
-    "name": "️非凡|采集",
-    "type": 1,
-    "api": "http://cj.ffzyapi.com/api.php/provide/vod/",
-    "playurl": "json:http://jx.84jia.com/m3u8ts.php?url=",
-    "searchable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "categories": ["国产剧","综艺","动漫","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","港澳剧","日剧","欧美剧","台湾剧","泰剧","韩剧","纪录片","动漫电影"]}
+    "categories": ["大陆剧","综艺","韩剧","动漫","动作","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","港澳剧","动漫电影","欧美剧"]}
 ],
     "lives":[
     {"name": "在线",
