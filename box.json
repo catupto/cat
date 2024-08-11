@@ -297,15 +297,6 @@
     "api": "./lib/drpy2.min.js",
     "ext": "./js/米爱影视.js"},
 
-    {"key": "drpy_js_voflix",
-    "name": "voflix|DRPY",
-    "type": 3,
-    "searchable": 1,
-    "quickSearch": 1,
-    "filterable": 1,
-    "api": "./lib/drpy2.min.js",
-    "ext": "./js/voflix.js"},
-    
     {"key": "drpy_js_sbys",
     "name": "素白|DRPY",
     "type": 3,
