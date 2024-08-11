@@ -1,13 +1,13 @@
     {"wallpaper":"https://img.loven.eu.org",
+    "spider": "./jar/0501.jar;md5;dfc2757a4e17cffc018d6b4f5a9711dd",
     "sites": [   
-    {"key": "drpy_js_360",
-    "name": "360|DRPY",
+    {"key": "csp_360",
+    "name": "360|首页",
     "type": 3,
+    "api": "csp_SP360",
     "searchable": 1,
     "quickSearch": 1,
-    "filterable": 1,
-    "api": "./lib/drpy2.min.js",
-    "ext": "./js/360影视.js"},
+    "filterable": 1},
  
     {"key": "drpy_js_db",
     "name": "豆瓣|榜单",
