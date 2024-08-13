@@ -1,13 +1,13 @@
     {"wallpaper":"https://img.loven.eu.org",
-    "sites": [
-    {"key": "drpy_js_360",
-    "name": "360|DRPY",
+    "spider": "./jar/0501.jar;md5;dfc2757a4e17cffc018d6b4f5a9711dd",
+    "sites": [   
+    {"key": "csp_sp_360",
+    "name": "360|首页",
     "type": 3,
+    "api": "csp_SP360",
     "searchable": 1,
     "quickSearch": 1,
-    "filterable": 1,
-    "api": "./lib/drpy2.min.js",
-    "ext": "./js/360影视.js"},
+    "filterable": 1},
  
     {"key": "drpy_js_db",
     "name": "豆瓣|榜单",
@@ -558,7 +558,7 @@
     "logo": "https://live.mxdyeah.top/logo/{name}.png"}
     ],
     "parses": [
-    //{"name":"智能嗅探",0"type":3,"url":"Web"},
+    {"name":"智能嗅探",0"type":3,"url":"Web"},
     {"name":"-冰豆-","type":0,"url":"https://bd.jx.cn/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
     {"name":"-8090-","type":0,"url":"https://www.8090g.cn/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}},
     {"name":"-2S-","type":0,"url":"https://jx.2s0.cn/player/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36","referer":"https://www.xyflv.cc/"}}},
