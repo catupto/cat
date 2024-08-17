@@ -405,6 +405,15 @@
     "api": "./lib/drpy2.min.js",
     "ext": "./js/干饭影视.js"},
  
+    {"key": "drpy_js_dtj",
+    "name": "待添加|DRPY",
+    "type": 3,
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "api": "./lib/drpy2.min.js",
+    "ext": "./js/备用.js"},
+ 
     {"key": "drpy_js_bili",
     "name": "哔哩|综合",
     "type": 3,
