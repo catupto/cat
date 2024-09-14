@@ -13,11 +13,11 @@ var rule = {
         20: {cateId: '20'},
         21: {cateId: '21'},
         22: {cateId: '22'},
-        23: {cateId: '23'},
-        24: {cateId: '24'},
-        25: {cateId: '25'}
+        33: {cateId: '33'},
+        34: {cateId: '34'},
+        35: {cateId: '35'}
     },
-    cate_exclude: '网址|演员',
+    cate_exclude: '全部影片|网址|演员',
     lazy: `js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
