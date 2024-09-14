@@ -12,7 +12,7 @@ var rule = {
     filter_def: {
         20: {cateId: '20'},
         21: {cateId: '21'},
-        22: {cateId: '22'},
+        25: {cateId: '25'},
         33: {cateId: '33'},
         34: {cateId: '34'},
         35: {cateId: '35'}
