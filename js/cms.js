@@ -4,8 +4,8 @@ var rule= {
 	title:'小阳影视',
 	模板:'mxone5',
 	host:'https://mov.xiaom.us.kg',
-        url:'/index.php/vod/show/id/fyclass/page/fypage.html',
-	//url:'/index.php/vod/show/id/fyfilter.html',
+        //url:'/index.php/vod/show/id/fyclass/page/fypage.html',
+	url:'/index.php/vod/show/id/fyfilter.html',
 	filterable:0,//是否启用分类筛选,
 	filter_url:'{{fl.cateId}}{{fl.area}}{{fl.by or "/by/time"}}{{fl.class}}{{fl.lang}}{{fl.letter}}/page/fypage{{fl.year}}',
 	filter: {
