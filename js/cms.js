@@ -1,6 +1,6 @@
 muban.mxone5.二级.desc = ';;;.video-info-actor:eq(1)&&Text;.video-info-actor:eq(0)&&Text';
 muban.mxone5.二级.tab_text = 'body--small&&Text';
-muban.mxone5.class_parse = '.sub-block&&ul&&li;a&&Text;a&&href;.*/(.*?)/';
+//muban.mxone5.class_parse = '.sub-block&&ul&&li;a&&Text;a&&href;.*/(.*?)/';
 var rule= {
 	title:'小阳影视',
 	模板:'mxone5',
