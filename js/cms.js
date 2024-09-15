@@ -21,8 +21,8 @@ var rule= {
 		25:{cateId:'25'},
 		21:{cateId:'21'},
 		33:{cateId:'33'},
-		34:{cateId:'24'},
-		40:{cateId:'40'}
+		34:{cateId:'34'},
+		35:{cateId:'35'}
 	},
 	cate_exclude:'网址|演员',
 	lazy:`js:
