@@ -1,6 +1,6 @@
 muban.mxpro.二级.desc = '.module-info-item:eq(4)&&Text;;;.module-info-item-content:eq(1)&&Text;.module-info-item-content:eq(0)&&Text';
 muban.mxpro.二级.tab_text = 'body--small&&Text';
-muban.mxpro.一级 = '.module-poster-items-base;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href';
+muban.mxpro.一级 = '.module-poster-items-base&&a;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href';
 var rule = {
     title: 'voflix',
     模板: 'mxpro',
