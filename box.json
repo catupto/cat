@@ -1,5 +1,6 @@
     {"wallpaper":"https://img.loven.eu.org",
-    "spider": "./jar/0501.jar;md5;dfc2757a4e17cffc018d6b4f5a9711dd",
+    //"spider": "./jar/0501.jar;md5;dfc2757a4e17cffc018d6b4f5a9711dd",
+    "spider": "./jar/0916.jar",
     "sites": [   
     {"key": "csp_sp_360",
     "name": "360|首页",
@@ -548,6 +549,16 @@
     "filterable": 1,
     "api": "./lib/drpy2.min.js",
     "ext": "./js/ok资源.js"}, 
+                
+    {"key": "xbpq-cms",
+    "name": "自建|cms",
+    "type": 3,
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "api": "csp_XBPQ",
+    "ext": {"分类url":"https://tv.tvbox.dns.navy/index.php/vod/show/id/{cateId}/page/{catePg}.html",
+    "分类":"电视剧$2#电影$1#综艺$3#动漫$4"}},  
         
     {"key": "csp_xml_xl",
     "name": "新浪|采集",
