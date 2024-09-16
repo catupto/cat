@@ -558,7 +558,7 @@
     "filterable": 1,
     "api": "csp_XBPQ",
     "ext": {"分类url":"https://tv.tvbox.dns.navy/index.php/vod/show/id/{cateId}/page/{catePg}.html",
-    "分类":"电视剧$2#电影$1#综艺$3#动漫$4"}},  
+    "分类":"国产剧$20#电视剧$21#电影$25#综艺$35#动漫$34"}},  
         
     {"key": "csp_xml_xl",
     "name": "新浪|采集",
