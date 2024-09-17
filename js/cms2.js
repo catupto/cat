@@ -21,7 +21,7 @@ var rule={
         4:{cateId:'4'},
         5:{cateId:'5'}
     },
-    class_parse: '.navbar-items li:gt(1):lt(7);a&&title;a&&href;.*/(.*?).html',
+    class_parse: '.navbar&&ul&&li;a&&title;a&&href;.*/(.*?).html',
     lazy:`js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
