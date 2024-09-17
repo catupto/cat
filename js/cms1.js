@@ -5,7 +5,7 @@ var rule = {
     模板: 'mxpro',
     host: 'https://xn--yety66k.eu.org',
     // url:'/show/fyclass--------fypage---.html',
-    url: '/show/fyfilter.html',
+    url: '/index.php/vod/show/id/fyfilter.html',
     filterable: 1,//是否启用分类筛选,
     filter_url: '{{fl.cateId}}-{{fl.area}}-{{fl.by or "time"}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
     filter: {
