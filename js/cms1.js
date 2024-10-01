@@ -4,7 +4,7 @@ var rule={
     title:'小阳影院',
     模板:'mxpro',
     host:'https://mov.xiaom.us.kg',
-    url:'/index.php/vod/show/fyfilter.html',
+    url:'/vod/show/fyfilter.html',
     filterable:1,//是否启用分类筛选,
     filter_url:'/area/{{fl.area}}/by/{{fl.by}}/class/{{fl.class}}/id/{{fl.cateId}}/lang/{{fl.lang}}/letter/{{fl.letter}}/page/fypage/year/{{fl.year}}',
     filter:{
