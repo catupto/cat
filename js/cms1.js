@@ -23,7 +23,7 @@ var rule={
         35:{cateId:'35'}
     },
     class_parse: '.navbar-items li:gt(1):lt(7);a&&title;a&&href;.*/(.*?).html',
-    一级: '.module-main.module-page;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
+    一级: 'a .module-main.module-page;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     lazy:`js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
