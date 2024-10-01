@@ -3,7 +3,7 @@ muban.mxpro.二级.tabs = '#y-playList .module-tab-item';
 var rule={
     title:'小阳影院',
     模板:'mxpro',
-    host:'https://xn--yety66k.eu.org',
+    host:'https://mov.xiaom.us.kg',
     url:'/vod/show/id/fyfilter.html',
     filterable:1,//是否启用分类筛选,
     filter_url:'{{fl.cateId}}-{{fl.area}}-{{fl.by}}-{{fl.class}}-{{fl.lang}}-{{fl.letter}}---fypage---{{fl.year}}',
