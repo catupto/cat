@@ -6,8 +6,7 @@ var rule={
     模板:'mxpro',
     host:'https://mov.xiaom.us.kg',
     url:'/index.php/vod/show/id/fyclass/page/fypage.html',
-    class_parse: '.navbar-items li:gt(1):lt(7);a&&title;a&&href;.*/(.*?).html',
-    //一级: '.module-items.module-poster-items-base;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
+    searchUrl: '/vodsearch/**----------fypage---.html',
     lazy:`js:
         var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
         var url = html.url;
