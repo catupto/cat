@@ -1,6 +1,6 @@
     {"wallpaper":"https://img.loven.eu.org",
-    //"spider": "./jar/0501.jar;md5;dfc2757a4e17cffc018d6b4f5a9711dd",
-    "spider": "./jar/0916.jar",
+    "spider": "./jar/0501.jar;md5;dfc2757a4e17cffc018d6b4f5a9711dd",
+    // "spider": "./jar/0916.jar",
     "sites": [   
     {"key": "csp_sp_360",
     "name": "360|首页",
@@ -91,6 +91,15 @@
     "api": "./lib/drpy2.min.js",
     "ext": "./js/LIBVIO.js"},
     
+    {"key": "drpy_js_ysdq",
+    "name": "央视|DRPY",
+    "type": 3,
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "api": "./lib/drpy2.min.js",
+    "ext": "./js/央视大全.js"},
+        
     {"key": "drpy_js_sj",
     "name": "视觉|DRPY",
     "type": 3,
