@@ -2,7 +2,8 @@ var rule = {
     title: '小阳影视',
     模板: 'mxpro',
     host: 'https://xn--yety66k.eu.org',
-    url:'/index.php/vod/show/id/fyclass/page/fypage.html'
+    url:'/index.php/vod/show/id/fyclass/page/fypage.html',
+    searchUrl: '/index.php/vod/search/wd/**.html',            
     filterable: 0,
     lazy: `js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
