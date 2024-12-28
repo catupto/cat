@@ -4,8 +4,8 @@ var rule = {
     host: 'https://xn--yety66k.eu.org',
     url:'/index.php/vod/show/id/fyclass/page/fypage.html',
     searchUrl: '/index.php/vod/search/wd/**.html',            
-    filterable: 0
-   /* lazy: `js:
+    filterable: 0,
+    lazy: `js:
 		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
 		var url = html.url;
 		if (html.encrypt == '1') {
@@ -29,5 +29,5 @@ var rule = {
 		} else {
 			input
 		}
-	`*/
+	`
 }
