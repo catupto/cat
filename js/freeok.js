@@ -1,32 +1,29 @@
-var rule = {
-    title: 'freeOK',
-    模板: 'mxpro',
-    host: 'https://www.freeok.la',
-    url:'/vodshow/2--------2---.html'
-    filterable: 0,
-    lazy: `js:
-		var html = JSON.parse(request(input).match(/r player_.*?=(.*?)</)[1]);
-		var url = html.url;
-		if (html.encrypt == '1') {
-			url = unescape(url)
-		} else if (html.encrypt == '2') {
-			url = unescape(base64Decode(url))
-		}
-		if (/\\.m3u8|\\.mp4/.test(url)) {
-			input = {
-				jx: 0,
-				url: url,
-				parse: 0
-			}
-		} else if (/\\/share/.test(url)) {
-			url = getHome(url) + request(url).match(/main.*?"(.*?)"/)[1];
-			input = {
-				jx: 0,
-				url: url,
-				parse: 0
-			}
-		} else {
-			input
-		}
-	`
-}
+var rule =  {
+            title: 'freeok',
+            host: 'https://www.freeok.la',
+            url: '/vodshow/fyclass--------fypage---.html',
+            searchUrl: '/vodsearch/**----------fypage---.html',
+            searchable: 2,//是否启用全局搜索,
+            quickSearch: 0,//是否启用快速搜索,
+            filterable: 0,//是否启用分类筛选,
+            headers: {//网站的请求头,完整支持所有的,常带ua和cookies
+                'User-Agent': 'MOBILE_UA', // "Cookie": "searchneed=ok"
+            },
+            class_parse: '.navbar-items li:gt(0):lt(10);a&&Text;a&&href;/(\\d+)',
+            play_parse: true,
+            lazy: common_lazy,
+            limit: 6,
+            double: true, // 推荐内容是否双层定位
+            推荐: '.tab-list.active;a.module-poster-item.module-item;.module-poster-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href',
+            一级: 'body a.module-poster-item.module-item;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
+            二级: {
+                title: 'h1&&Text;.module-info-tag-link:eq(-1)&&Text',
+                img: '.lazyload&&data-original||data-src||src',
+                desc: '.module-info-item:eq(-2)&&Text;.module-info-tag-link&&Text;.module-info-tag-link:eq(1)&&Text;.module-info-item:eq(2)&&Text;.module-info-item:eq(1)&&Text',
+                content: '.module-info-introduction&&Text',
+                tabs: '.module-tab-item',
+                lists: '.module-play-list:eq(#id) a',
+                tab_text: 'div--small&&Text',
+            },
+            搜索: 'body .module-item;.module-card-item-title&&Text;.lazyload&&data-original;.module-item-note&&Text;a&&href;.module-info-item-content&&Text',
+        }
