@@ -18,8 +18,8 @@ var rule = {
     headers: {//网站的请求头,完整支持所有的,常带ua和cookies
         'User-Agent': 'MOBILE_UA',
     }, // class_parse: '#topnav li:lt(4);a&&Text;a&&href;.*/(.*?).html',
-    class_name: '电影&连续剧&综艺&动漫&短剧',//静态分类名称拼接
-    class_url: '1&2&3&4&26',//静态分类标识拼接
+    class_name: '电视剧&电影&综艺&动漫&短剧',//静态分类名称拼接
+    class_url: '2&1&3&4&26',//静态分类标识拼接
     play_parse: true,
     lazy: $js.toString(() => {
         let init_js = `Object.defineProperties(navigator, {platform: {get: () => 'iPhone'}});`;
