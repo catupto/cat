@@ -1,0 +1,28 @@
+var rule = {
+  title: '电影100',
+  host: 'https://www.dianying101.xyz/',
+  url: '/index.php/vod/show/id/fyclass/page/fypage.html',
+  searchUrl: '/index.php/new_search/search/wd/**/page/fypage.html?wd=**',
+  searchable: 2,
+  quickSearch: 0,
+  filterable: 0,
+  headers: {
+    'User-Agent': 'MOBILE_UA',
+  },
+  class_parse: '.myui-header__menu li.hidden-sm:gt(0):lt(7);a&&Text;a&&href;/(\\d+).html',
+  play_parse: true,
+  lazy: "js:\n  let html = request(input);\n  let hconf = html.match(/r player_.*?=(.*?)</)[1];\n  let json = JSON5.parse(hconf);\n  let url = json.url;\n  if (json.encrypt == '1') {\n    url = unescape(url);\n  } else if (json.encrypt == '2') {\n    url = unescape(base64Decode(url));\n  }\n  if (/\\.(m3u8|mp4|m4a|mp3)/.test(url)) {\n    input = {\n      parse: 0,\n      jx: 0,\n      url: url,\n    };\n  } else {\n    input = url && url.startsWith('http') && tellIsJx(url) ? {parse:0,jx:1,url:url}:input;\n  }",
+  limit: 6,
+  double: true,
+  推荐: 'ul.myui-vodlist.clearfix;li;a&&title;a&&data-original;.text-overflow&&Text;a&&href',
+  一级: '.myui-vodlist li;a&&title;a&&data-original;.text-overflow&&Text;a&&href',
+  二级: {
+    title: '.myui-content__detail .title--span&&Text;.score&&Text',
+    img: '.myui-content__thumb .lazyload&&data-original',
+    desc: '.data:eq(0)&&Text;.text-muted.hidden-xs:eq(1)--a&&Text;.text-muted.hidden-xs:eq(0)--a&&Text;.myui-content__detail p.data:eq(2&&Text;.myui-content__detail p.data:eq(3)&&Text',
+    content: '.sketch.content&&Text',
+    tabs: '.nav-flex&&li',
+    lists: '.myui-content__list:eq(#id) li',
+  },
+  搜索: '#searchList li;a&&title;.lazyload&&data-original;.pic-text&&Text;a&&href;.detail&&Text',
+}
