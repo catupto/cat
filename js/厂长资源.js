@@ -1,89 +1,114 @@
-var rule={
-	title:'厂长资源',
-        host:'https://www.czzyvideo.com', 
-	//host:'https://www.czzy.site',
-	//https://cz01.pw
-	//https://cz01.tv重定位到https://www.czz9.com/
-	//hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});HOST = jsp.pdfh(html,"h3&&li&&a&&href");log(HOST);',
-	url:'/fyclassfyfilter',
-	filterable:1,//是否启用分类筛选,
-	filter_url:'{{fl.cateId}}{{fl.class}}{{fl.area}}/page/fypage',
-	filter: {
-		"movie_bt":[
-			{"key":"area","name":"分类","value":[{"v":"","n":"全部"},{"v":"/movie_bt_series/zhanchangtuijian","n":"站长推荐"},{"v":"/movie_bt_series/dyy","n":"电影"},{"v":"/movie_bt_series/dianshiju","n":"电视剧"},{"v":"/movie_bt_series/dohua","n":"动画"},{"v":"/movie_bt_series/guochanju","n":"国产剧"},{"v":"/movie_bt_series/mj","n":"美剧"},{"v":"/movie_bt_series/rj","n":"日剧"},{"v":"/movie_bt_series/hj","n":"韩剧"},{"v":"/movie_bt_series/hwj","n":"海外剧（其他）"},{"v":"/movie_bt_series/huayudianying","n":"华语电影"},{"v":"/movie_bt_series/meiguodianying","n":"欧美电影"},{"v":"/movie_bt_series/ribendianying","n":"日本电影"},{"v":"/movie_bt_series/hanguodianying","n":"韩国电影"},{"v":"/movie_bt_series/yingguodianying","n":"英国电影"},{"v":"/movie_bt_series/faguodianying","n":"法国电影"},{"v":"/movie_bt_series/yindudianying","n":"印度电影"},{"v":"/movie_bt_series/eluosidianying","n":"俄罗斯电影"},{"v":"/movie_bt_series/jianadadianying","n":"加拿大电影"},{"v":"/movie_bt_series/huiyuanzhuanqu","n":"会员专区"}]},
-			{"key":"class","name":"类型","value":[{"n":"全部","v":""},{"n":"传记","v":"/movie_bt_tags/chuanji"},{"n":"儿童","v":"/movie_bt_tags/etet"},{"n":"冒险","v":"/movie_bt_tags/maoxian"},{"n":"剧情","v":"/movie_bt_tags/juqing"},{"n":"动作","v":"/movie_bt_tags/dozuo"},{"n":"动漫","v":"/movie_bt_tags/doman"},{"n":"动画","v":"/movie_bt_tags/dhh"},{"n":"历史","v":"/movie_bt_tags/lishi"},{"n":"古装","v":"/movie_bt_tags/guzhuang"},{"n":"同性","v":"/movie_bt_tags/tongxing"},{"n":"喜剧","v":"/movie_bt_tags/xiju"},{"n":"奇幻","v":"/movie_bt_tags/qihuan"},{"n":"家庭","v":"/movie_bt_tags/jiating"},{"n":"恐怖","v":"/movie_bt_tags/kubu"},{"n":"悬疑","v":"/movie_bt_tags/xuanyi"},{"n":"情色","v":"/movie_bt_tags/qingse"},{"n":"惊悚","v":"/movie_bt_tags/kingsong"},{"n":"战争","v":"/movie_bt_tags/zhanzhen"},{"n":"歌舞","v":"/movie_bt_tags/gw"},{"n":"武侠","v":"/movie_bt_tags/wuxia"},{"n":"灾难","v":"/movie_bt_tags/zainan"},{"n":"爱情","v":"/movie_bt_tags/aiqing"},{"n":"犯罪","v":"/movie_bt_tags/fanzui"},{"n":"短片","v":"/movie_bt_tags/dp"},{"n":"科幻","v":"/movie_bt_tags/kh"},{"n":"纪录片","v":"/movie_bt_tags/jlpp"},{"n":"西部","v":"/movie_bt_tags/xb"},{"n":"运动","v":"/movie_bt_tags/yd"},{"n":"音乐","v":"/movie_bt_tags/yy"}]}
-		]
-	},
-	searchUrl:'/daoyongjiek0shibushiyoubing?q=**',
-	searchable:2,
-	filterable:0,
-	headers:{
-		'User-Agent': 'okhttp 4.3.12',
-		'Cookie': 'esc_search_captcha=1'
-	},
-	class_name:'全部&豆瓣电影Top250&高分影视&最新电影&热映中&站长推荐&电影&电视剧&动画&国产剧&日剧&韩剧&美剧&海外剧&俄罗斯电影&加拿大电影&华语电影&印度电影&日本电影&欧美电影&法国电影&英国电影&韩国电影&纪录片',
-	class_url:'movie_bt&dbtop250&gaofenyingshi&zuixindianying&reyingzhong&/movie_bt_series/zhanchangtuijian&/movie_bt_series/dyy&/movie_bt_series/dianshiju&/movie_bt_series/dohua&/movie_bt_series/guochanju&/movie_bt_series/rj&/movie_bt_series/hj&/movie_bt_series/mj&/movie_bt_series/hwj&/movie_bt_series/eluosidianying&/movie_bt_series/jianadadianying&/movie_bt_series/huayudianying&/movie_bt_series/yindudianying&/movie_bt_series/ribendianying&/movie_bt_series/meiguodianying&/movie_bt_series/faguodianying&/movie_bt_series/yingguodianying&/movie_bt_series/hanguodianying&movie_bt//movie_bt_tags/jlpp',
-	play_parse:true,
+// 地址发布页 https://www.czzy.site
+// 地址发布页 https://cz01.vip
+var rule = {
+    title: '厂长资源',
+    host:'https://www.czzyvideo.com',
+    url: '/fyclassfyfilter',
+    filterable: 1,//是否启用分类筛选,
+    filter_url: '{{fl.cateId}}{{fl.class}}{{fl.area}}/page/fypage',
+    filter: 'H4sIAAAAAAAAA42V3U7iQBTH36XXJt77KhtjBql0EFqlHbUYE79AQEXcVfwiarJi8QOVNborUniZTluufIXtiO1U7LRe9KLT3/+cOWfO/LvIpaU5yE/EFG7sxyI3zavcGAcyPOBGOBGkeecNF/JW69V5nwMpxL9jc84yAcjXXKO/1uCWRgaro264CZnPQF4ezQpAnHSehIJgEgLxQ2bdHPX3e2a5YW9X2OK4qrr83hPWWyGkE1oWYBJR3tbyuKiFSCQBAbeKUsPae2WzCSSRIrzw+EQ32lpo+HTS3Uq3HApmXNA8qIeCggv2z67CwXkv5NNffFF14LdOAeeejdfqW6cYIkRARaSVKhQTbqnbZfu+GdX/NA+dHg1JzVvNKT5KmoExXhxWHtTN2m2UkozVl6SkOSd6lJQIvmrtzdY3tFMgoNTH/e9ljX/t7wNuX0Yp+RSSZDgkNXrrln5gVu+j1OTigTgYzlw6Nzd7+EKL7DOCKgJi1hkPcda9AkbnGO8eGv9+4a02tzROxAP3mEwBWab24XgHPt38ZB8+3xgZeAlRD4Ke23cPH6t0HwpIyKOTJH0Seixe71k39WCWV3iFgvmf/aOrYDANpAXiSh5b1My1XDCbRLOkeR5aahh6LRiNS1kk+Umzc8Mi0/70Ax8KJgWBcuU83vkTzKWgY4SU3LmwfzMKSqD3I/WVVNkyl7VgWJHExMKn+qs14kKB8AJxYg+sb+AXRlGzkOyAonfPuN1ktB8CxZ/fXKmYy9VgdhrFaH5z9daq7jI2isiVoOhazi4y+koOX+Z9aMlcPWakJ6jk32vh0GgXg2Hyh8wKPG2C2dyyC6eMI5v3YZdG9zwYm0fOVHuktdLtH3cZ2QEUfQdgFVrM+Qfw0/xbpXtLvw5Gp5ySEG2rdda0ihuMsZ6hmLbLHJRpOvxW+xrr+8yAydQMDWnXe9Rmhs8+RrFexbl6wZga97D+2aPxUmFgKnHB8aX/CTefD1IJAAA=',
+    searchUrl: '/daoyongjiekoshibushiyoubing?q=**&f=_all&p=fypage',
+    
+    searchable: 2,
+    filterable: 0,
+    headers: {
+        'User-Agent': 'PC_UA',
+        // 'Cookie': 'esc_search_captcha=1'
+    },
+    class_name: '国产剧&高分影视&最新电影&电影&电视剧&动画&日剧&韩剧&美剧&海外剧&俄罗斯电影&加拿大电影&华语电影&印度电影&日本电影&欧美电影&韩国电影',
+    class_url: '/movie_bt_series/guochanju&gaofenyingshi&zuixindianying&/movie_bt_series/dyy&/movie_bt_series/dianshiju&/movie_bt_series/dohua&/movie_bt_series/rj&/movie_bt_series/hj&/movie_bt_series/mj&/movie_bt_series/hwj&/movie_bt_series/eluosidianying&/movie_bt_series/jianadadianying&/movie_bt_series/huayudianying&/movie_bt_series/yindudianying&/movie_bt_series/ribendianying&/movie_bt_series/meiguodianying&/movie_bt_series/hanguodianying',
+    play_parse: true,
 
-	// lazy代码:源于海阔香雅情大佬 / 小程序：香情影视 https://pastebin.com/L4tHdvFn
-	lazy:`js:
-		pdfh = jsp.pdfh;
-		var html = request(input);
-		var ohtml = pdfh(html, '.videoplay&&Html');
-		var url = pdfh(ohtml, "body&&iframe&&src");
-		if (/Cloud/.test(url)) {
-			var ifrwy = request(url);
-			let code = ifrwy.match(/var url = '(.*?)'/)[1].split('').reverse().join('');
-			let temp = '';
-			for (let i = 0x0; i < code.length; i = i + 0x2) {
-				temp += String.fromCharCode(parseInt(code[i] + code[i + 0x1], 0x10))
-			}
-			input = {
-				jx: 0,
-				url: temp.substring(0x0, (temp.length - 0x7) / 0x2) + temp.substring((temp.length - 0x7) / 0x2 + 0x7),
-				parse: 0
-			}
-		} else if (/decrypted/.test(ohtml)) {
-			var phtml = pdfh(ohtml, "body&&script:not([src])&&Html");
-			eval(getCryptoJS());
-			var scrpt = phtml.match(/var.*?\\)\\);/g)[0];
-			var data = [];
-			eval(scrpt.replace(/md5/g, 'CryptoJS').replace('eval', 'data = '));
-			input = {
-				jx: 0,
-				url: data.match(/url:.*?[\\'\\"](.*?)[\\'\\"]/)[1],
-				parse: 0
-			}
-		} else {
-			input
-		}
-	`,
-	推荐:'.bt_img;ul&&li;*;*;*;*',
-	double:true,
-	一级:'.bt_img&&ul&&li;h3.dytit&&Text;img.lazy&&data-original;.jidi&&Text;a&&href',
-	二级:{
-		"title": "h1&&Text;.moviedteail_list li&&a&&Text",
-		"img": "div.dyimg img&&src",
-		"desc": ".moviedteail_list li:eq(3) a&&Text;.moviedteail_list li:eq(2) a&&Text;.moviedteail_list li:eq(1) a&&Text;.moviedteail_list li:eq(7)&&Text;.moviedteail_list li:eq(5)&&Text",
-		"content": ".yp_context&&Text",
-		"tabs": ".mi_paly_box span",
-		"lists": ".paly_list_btn:eq(#id) a"
-	},
-	搜索:'.search_list&&ul&&li;*;*;*;*',
-	搜索:`js:
-	var html = request(input);
-	var d=[];
-	if (html.indexOf('|')>0){
-		let episodes = html.split('$$$');
-		episodes.forEach(function(ep) {
-			let tp=ep.split('|');
-			d.push({
-			title:tp[1],
-			img:tp[2],
-			desc:tp[3],
-			url:HOST+'/movie/'+tp[0]+'.html'})
-		})
-		setResult(d);
-	}
-	`	
+    // lazy代码:源于海阔香雅情大佬 / 小程序：香情影视 https://pastebin.com/L4tHdvFn
+    lazy: `js:
+        pdfh = jsp.pdfh;
+        var html = request(input);
+        var ohtml = pdfh(html, '.videoplay&&Html');
+        var url = pdfh(ohtml, "body&&iframe&&src");
+        if (url) {
+            var _obj={};
+            eval(pdfh(request(url),'body&&script&&Html')+'\\n_obj.player=player;_obj.rand=rand');
+            function js_decrypt(str, tokenkey, tokeniv) {
+                eval(getCryptoJS());
+                var key = CryptoJS.enc.Utf8.parse(tokenkey);
+                var iv = CryptoJS.enc.Utf8.parse(tokeniv);
+                return CryptoJS.AES.decrypt(str, key, {iv: iv,padding: CryptoJS.pad.Pkcs7}).toString(CryptoJS.enc.Utf8);
+            };
+            let config = JSON.parse(js_decrypt(_obj.player,'VFBTzdujpR9FWBhe', _obj.rand));
+            input = {
+                 jx: 0,
+                 url: config.url,
+                 parse: 0
+            };
+        }else if (/decrypted/.test(ohtml)) {
+            var phtml = pdfh(ohtml, "body&&script:not([src])&&Html");
+            eval(getCryptoJS());
+            var script = phtml.match(/var.*?\\)\\);/g)[0];
+            var data = [];
+            eval(script.replace(/md5/g, 'CryptoJS').replace('eval', 'data = '));
+            input = {
+                jx: 0,
+                url: data.match(/url:.*?['"](.*?)['"]/)[1],
+                parse: 0
+            }
+
+
+        } 
+    `,
+    推荐: '.bt_img;ul&&li;*;*;*;*',
+    double: true,
+    一级: '.bt_img&&ul&&li;h3.dytit&&Text;img.lazy&&data-original;.jidi&&Text;a&&href',
+    二级: {
+        "title": "h1&&Text;.moviedteail_list li&&a&&Text",
+        "img": "div.dyimg img&&src",
+        "desc": ".moviedteail_list li:eq(3) a&&Text;.moviedteail_list li:eq(2) a&&Text;.moviedteail_list li:eq(1) a&&Text;.moviedteail_list li:eq(7)&&Text;.moviedteail_list li:eq(5)&&Text",
+        "content": ".yp_context&&Text",
+        "tabs": ".mi_paly_box span",
+        "lists": ".paly_list_btn:eq(#id) a"
+    },
+    搜索: `js:
+    let cookie = getItem(RULE_CK,'');
+    // let cookie = '';
+    log('储存的cookie:'+cookie);
+    let hhtml=request(input,{withHeaders:true,headers:{Cookie:cookie}});
+    let json = JSON.parse(hhtml);
+    let html = json.body;
+    let setCk = Object.keys(json).find(it=>it.toLowerCase()==='set-cookie');
+    cookie = setCk ? json[setCk] : cookie;
+    // 3个set-Cookie
+    if (Array.isArray(cookie)) {
+        cookie = cookie.join(';');
+    }
+    cookie = cookie.split(';')[0];
+    log('set-cookie:'+cookie);
+    let code='';
+    if(/erphp-search-captcha/.test(html)){
+        code = jsp.pdfh(html,'.erphp-search-captcha--button&&Text');
+        if(code.includes('=')){
+            let a = code.replace('=','').replace(/ /g,'');
+            code = eval(a);
+            log('回答验证码:'+a+' 答案:'+code);
+        }
+        let key = jsp.pdfh(html,'.erphp-search-captcha&&input&&name');
+        let body = key+'='+code;
+        post(input,{body:body,headers:{Cookie:cookie}});
+        setItem(RULE_CK,cookie);
+        html = getHtml(input);
+    }
+    // log(html);
+    VODS = [];
+    let lis=pdfa(html,'.search_list&&ul&&li');
+    log(lis.length);
+    lis.forEach(function(it){
+        VODS.push({
+            vod_id: pd(it,'a&&href',input),
+			vod_name: pdfh(it,'h3.dytit&&Text'),
+			vod_pic: pd(it,'img.lazy&&data-original',input),
+			vod_remarks: pdfh(html,'.jidi&&Text')
+        });
+    
+    });
+    
+    `,
+
 }
