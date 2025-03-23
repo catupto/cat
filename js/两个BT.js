@@ -13,8 +13,8 @@ var rule = {
     },
     searchUrl:'/xssearch?q=**&f=_all&p=fypage',
     // searchUrl:'/xsssearch?q=**&f=_all&p=fypage',
-    searchable:2,
-    quickSearch:0,
+    searchable:1,
+    quickSearch:1,
     headers:{
         'User-Agent':'PC_UA'
     },
@@ -36,5 +36,5 @@ var rule = {
         "tabs":".ypxingq_t:eq(1) span",
         "lists":".paly_list_btn:eq(#id) a"
     },
-    搜索:'*',
+    搜索:'.bt_img li;.lazy&&alt;.thumb.lazy&&data-original;.jidi span&&Text;a&&href',
 }
